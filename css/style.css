@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/*pre set*/
+
+/* Here, the universal selector * selects all elements on the page and sets their margin and padding to 0.also box-sizing: border-box;  This can be useful for creating a consistent baseline style for all elements on a page.*/
+*{
+   padding: 0px;/*1rem=16px*/
+   margin: 0px;
+   box-sizing: border-box; /*the padding and border widths are included in the element's total width and height*/
+}
+/*   :root selector can be useful for setting global styles that apply to the entire page, such as default font sizes, colors, or other layout styles. */
+:root{
+   
+    --primary-color:#047aed;
+    --secondary-color:#1c3fa8;
+    --dark-color:#002240;
+    --light-color:#f4f4f4;
+    --success-color:#5cb85c;
+    --error-color:#d9534f;
+}
+
+body{
+    font-family:'Lato','sans-serif' ;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+ul{
+    list-style-type: none;/*bullet points(.) or other types of markers that usually appear before each list item will be removed*/
+}
+a{
+    text-decoration: none;/*used to remove the underline or any other text decorations that are applied to a text element. By default, links (anchor tags) are underlined in most web browsers, but you can use this property to remove that underline.*/
+    color: #333;
+}
+
+h1,h2{
+    font-weight: 300;/*used to specify the weight or thickness of a font.*/
+}
+p{
+    margin: 10px 0;
+}
+img{
+    width: 100%;  /*Using width: 100%; can be useful for creating responsive images that adjust to different screen sizes and device types. It can also help prevent images from overflowing their containers and breaking the layout of the webpage.
+    
+    
+    If the width property is set to a percentage and the height property is set to "auto", the image will be responsive and scale up and down:*/
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 70px;
+}
+.navbar ul{
+    display: flex;
+}
+
+.navbar a{
+    color: #fff;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.navbar a:hover{
+    border-bottom: 2px #fff solid; /*the CSS is setting a 2-pixel thick, solid white (#fff) border on the bottom of the anchor element. This border will only be applied when the user is hovering over the element, due to the :hover pseudo-class selector.*/
+}
+
+.navbar .flex{
+    justify-content: space-between;
+}
